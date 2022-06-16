@@ -1,0 +1,38 @@
+@media screen and (max-width:600px) {
+    img{
+        display:none;
+    }
+    .widthAdjust{
+     width:90vw;   
+    }
+    .loginContainer{
+        margin:40% 5%;
+    }
+}
+@media screen and (min-width:600px) {
+    .widthAdjust{
+        width:30vw;   
+    }
+    .loginContainer{
+        margin:auto 2.5%;
+        width: 30%;
+    }
+}
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+}
+.loginStyle{
+    padding:3%;
+    margin:2%;
+    border:1px #F3F2F3 solid;
+}
+.ant-checkbox .ant-checkbox-inner {
+    border-color: #00171F;
+    margin-right: 5px;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #00171F;
+    border-color: #00171F;
+}
