@@ -23,7 +23,11 @@ export default function Login() {
     }).catch(function(error){
       if(error.response){
         console.log(error.response.data);
-        message.info('Missing Password');
+        if(error.response.data.error === 'user not found')
+        {message.info("User Not Found");}
+        if(error.response.data.error === "Missing password")
+        {message.info("Missing Password");
+        }
       }
     });
   };
